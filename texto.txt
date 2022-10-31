@@ -1,0 +1,2 @@
+Aqui se muestra el texto dentro del archivo TXT;  Jacqueline Gavilanes;   Para que sirve XMLHttpRequest: 
+ XMLHttpRequest SIRVE para enviar solicitudes HTTP con el objetivo de intercambiar datos entre el sitio web y el servidor.

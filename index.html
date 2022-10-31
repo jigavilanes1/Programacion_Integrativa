@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programación Integrativa</title>
+<link href="https://blog.artegrafico.net/wp-content/uploads/2019/03/699748-icon-102-document-file-xml-512.png" rel="icon">
+<link href="css/estiloi.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+	<h2>Programación Integrativa</h2>
+	<p>Video Tarea N°2</p>
+	<p align="left">Realizar la siguiente actividad:
+	<ul>
+		<li align="left">Elaborar una tabla en el que se especifique las semejanzas y diferencias entre XML y JSON</li>
+		<li align="left">Especificar un ejemplo (incluir el archivo .txt, el código respectivo y los resultados) en el que se utilice la tecnología AJAX para crear un XMLHttpRequest simple y recupere datos de un archivo .txt</li>
+	</ul>
+	</p>
+	<p>Nombre: Jacqueline Gavilanes; NRC: 8456</p>
+	<p>Texto</p>
+<form>
+	<div id="demo">
+		<button type="button" onclick="loadDoc()">Leer txt</button>
+	</div>		
+	<script>
+		function loadDoc() {
+			const xhttp = new XMLHttpRequest();
+		    xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("demo").innerHTML =
+				this.responseText;
+			}
+		};
+			xhttp.open("GET", "texto.txt");
+			xhttp.send();
+		}
+	</script>
+	
+  </form>
+</div>
+</body>
+</html>
